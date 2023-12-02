@@ -1,15 +1,16 @@
 import { useState } from "react";
 import logo from "../../Assets/Icons/logo.png";
 import { CiShoppingCart } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   return (
     <div className="flex items-center justify-between mx-8">
-      <div className="flex items-center">
+      <Link to="/" className="flex items-center">
         <img src={logo} alt="" />
-        <p className="text-2xl ml-2">E-Commerce</p>
-      </div>
+        <p className="text-2xl ml-2">E-Clotherce</p>
+      </Link>
       <div className="flex list-none text-xl">
         <li
           className="mr-4 cursor-pointer"
@@ -17,8 +18,12 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          Shop
-          {menu === "shop" ? <hr /> : <></>}
+          <Link to="/">Shop</Link>
+          {menu === "shop" ? (
+            <hr className="w-3/4 m-auto bg-blue-700 border-0 h-1" />
+          ) : (
+            <></>
+          )}
         </li>
         <li
           className="mr-4 cursor-pointer"
@@ -26,7 +31,12 @@ const Navbar = () => {
             setMenu("men");
           }}
         >
-          Men
+          <Link to="/mens">Men</Link>
+          {menu === "men" ? (
+            <hr className="w-3/4 m-auto bg-blue-700 border-0 h-1" />
+          ) : (
+            <></>
+          )}
         </li>
         <li
           className="mr-4 cursor-pointer"
@@ -34,7 +44,12 @@ const Navbar = () => {
             setMenu("women");
           }}
         >
-          Women
+          <Link to="womens">Women</Link>
+          {menu === "women" ? (
+            <hr className="w-3/4 m-auto bg-blue-700 border-0 h-1" />
+          ) : (
+            <></>
+          )}
         </li>
         <li
           className="mr-4 cursor-pointer"
@@ -42,16 +57,24 @@ const Navbar = () => {
             setMenu("kids");
           }}
         >
-          Kids
+          <Link to="kids">Kids</Link>
+          {menu === "kids" ? (
+            <hr className="w-3/4 m-auto bg-blue-700 border-0 h-1" />
+          ) : (
+            <></>
+          )}
         </li>
       </div>
       <div className="flex">
         <button className="mr-2 p-1 border-2 border-black rounded-xl">
-          Log In
+          <Link to="login">Log In</Link>
         </button>
-        <p>
+        <Link to="/cart">
           <CiShoppingCart className="h-8 w-10 text-red-500 cursor-pointer" />
-        </p>
+        </Link>
+        <div className="w-4 h-4 flex justify-center items-center -ml-4 rounded-xl bg-red-500 text-white text-sm font-semibold">
+          0
+        </div>
       </div>
     </div>
   );
