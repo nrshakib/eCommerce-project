@@ -1,0 +1,59 @@
+
+[
+  {
+    "id": 12,
+    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "image":"https://i.ibb.co/84DKFMX/product-12.png",
+    "new_price": 50.0,
+    "old_price": 80.5
+  },
+  {
+    "id": 35,
+    "name": "Boys Orange Colourblocked Hooded Sweatshirt",
+    "image": "https://i.ibb.co/K2ccq6d/product-35.png",
+    "new_price": 85.0,
+    "old_price": 120.5
+  },
+  {
+    "id": 14,
+    "name": "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    "image": "https://i.ibb.co/NtN8fcG/product-14.png",
+    "new_price": 60.0,
+    "old_price": 100.5
+  },
+  {
+    "id": 8,
+    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "image": "https://i.ibb.co/C2j6Z4H/product-8.png",
+    "new_price": 100.0,
+    "old_price": 150.0
+  },
+  {
+    "id": 15,
+    "name": "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    "image": "https://i.ibb.co/Gtm8jyB/product-15.png",
+    "new_price": 50.0,
+    "old_price": 80.5
+  },
+  {
+    "id": 2,
+    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "image": "https://i.ibb.co/5xBc5Cz/product-2.png",
+    "new_price": 85.0,
+    "old_price": 120.5
+  },
+  {
+    "id": 17,
+    "name": "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    "image": "https://i.ibb.co/1sH8LQT/product-17.png",
+    "new_price": 60.0,
+    "old_price": 100.5
+  },
+  {
+    "id": 28,
+    "name": "Boys Orange Colourblocked Hooded Sweatshirt",
+    "image": "https://i.ibb.co/cr0pN5C/product-28.png",
+    "new_price": 100.0,
+    "old_price": 150.0
+  }
+]
