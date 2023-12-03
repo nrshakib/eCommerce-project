@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../Layout/Layout";
+// import Layout from "../Layout/Main";
 import Shop from "../../Pages/Shop";
 import Category from "../../Pages/Category";
 import Product from "../../Pages/Product";
@@ -7,12 +7,18 @@ import Cart from "../../Pages/Cart";
 import LogIn from "../../Pages/LogIn";
 import SignIn from "../../Pages/SignIn";
 import WishList from "../../Pages/WishList";
+import Main from "../Layout/Main";
+// import Home from "../Home/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <Main />,
     children: [
+      // {
+      //   path: "/",
+      //   element: <Home />,
+      // },
       {
         path: "shop",
         element: <Shop />,

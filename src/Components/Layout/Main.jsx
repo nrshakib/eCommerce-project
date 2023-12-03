@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 
-const Layout = () => {
+const Main = () => {
   return (
     <div className="font-sans bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-300">
       <Navbar />
@@ -10,4 +10,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default Main;
