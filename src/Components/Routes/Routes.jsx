@@ -8,17 +8,17 @@ import LogIn from "../../Pages/LogIn";
 import SignIn from "../../Pages/SignIn";
 import WishList from "../../Pages/WishList";
 import Main from "../Layout/Main";
-// import Home from "../Home/Home";
+import Home from "../Home/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
     children: [
-      // {
-      //   path: "/",
-      //   element: <Home />,
-      // },
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "shop",
         element: <Shop />,

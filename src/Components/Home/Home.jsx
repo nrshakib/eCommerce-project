@@ -1,11 +1,11 @@
-// import Hero from "../Hero/Hero";
+import Hero from "../Hero/Hero";
 
-// const Home = () => {
-//   return (
-//     <div>
-//       <Hero />
-//     </div>
-//   );
-// };
+const Home = () => {
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
+};
 
-// export default Home;
+export default Home;
