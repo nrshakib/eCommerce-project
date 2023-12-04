@@ -1,4 +1,4 @@
-import logo from "../../Assets/Icons/logo.png";
+import logo from "/public/Assets/Icons/logo.png";
 import { CiShoppingCart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import Menubar from "./Menubar";

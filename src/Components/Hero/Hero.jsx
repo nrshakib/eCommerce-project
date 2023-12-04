@@ -1,4 +1,4 @@
-import hand_logo from "../../Assets/Icons/hand_icon.png";
+import hand_logo from "/public/Assets/Icons/hand_icon.png";
 import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa vero
           voluptates pariatur sapiente iste et placeat ex, hic eaque aliquam?
         </p>
-        <div >
+        <div>
           <button className="w-36 bg-orange-400 text-white font-bold rounded-xl pl-4 py-2 mt-2 mb-2 flex items-center">
             SHOP NOW
             <FaArrowRight className="ml-2" />

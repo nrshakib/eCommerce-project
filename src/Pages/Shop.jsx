@@ -1,5 +1,11 @@
+import ShopItems from "../Components/ShopItems/ShopItems";
+
 const Shop = () => {
-  return <div></div>;
+  return (
+    <div>
+      <ShopItems />
+    </div>
+  );
 };
 
 export default Shop;
