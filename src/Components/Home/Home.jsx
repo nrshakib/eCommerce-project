@@ -1,4 +1,5 @@
 import Hero from "../Hero/Hero";
+import NewsLetter from "../NewsLetter/NewsLetter";
 import Offers from "../Offers/Offers";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <Hero />
       <Offers />
+      <NewsLetter />
     </div>
   );
 };

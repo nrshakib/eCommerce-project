@@ -6,7 +6,7 @@ const LatestCollections = () => {
   useEffect(() => {
     fetch("public/Assets/Data/new_collections.json")
       .then((res) => res.json())
-      //   .then((data) => console.log(data))
+      //   .then((data) => console.log(data))1
       .then((data) => setLatestCollection(data));
   }, []);
   return (
@@ -16,7 +16,7 @@ const LatestCollections = () => {
       </p>
       <hr className="h-px bg-gray-400 border-0 w-4/5 mx-auto" />
 
-      <div className="flex mt-5 justify-between mx-32">
+      <div className="mt-5 ml-48 mr-32 grid grid-cols-4">
         {latestCollection &&
           latestCollection.map((item) => {
             console.log(item);
