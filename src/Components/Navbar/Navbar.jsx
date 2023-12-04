@@ -1,4 +1,4 @@
-import logo from "/public/Assets/Icons/logo.png";
+import logo from "/Assets/Icons/logo.png";
 import { CiShoppingCart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import Menubar from "./Menubar";
@@ -8,7 +8,7 @@ import { FaRegHeart } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div>
-      <div className="flex items-center justify-between mx-8">
+      <div className="flex items-center justify-between mx-8 pt-4">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="" />
           <p className="text-2xl ml-2">E-Clotherce</p>

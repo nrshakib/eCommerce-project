@@ -1,0 +1,30 @@
+import { useEffect, useState } from "react";
+import Item from "../Items/Item";
+
+const LatestCollections = () => {
+  const [latestCollection, setLatestCollection] = useState([]);
+  useEffect(() => {
+    fetch("public/Assets/Data/new_collections.json")
+      .then((res) => res.json())
+      //   .then((data) => console.log(data))
+      .then((data) => setLatestCollection(data));
+  }, []);
+  return (
+    <div className="mt-2">
+      <p className="text-center text-3xl text-yellow-500">
+        Our Latest Collections
+      </p>
+      <hr className="h-px bg-gray-400 border-0 w-4/5 mx-auto" />
+
+      <div className="flex mt-5 justify-between mx-32">
+        {latestCollection &&
+          latestCollection.map((item) => {
+            console.log(item);
+            return <Item key={item.id} shopItem={item} />;
+          })}
+      </div>
+    </div>
+  );
+};
+
+export default LatestCollections;

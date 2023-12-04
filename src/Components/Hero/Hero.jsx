@@ -1,4 +1,4 @@
-import hand_logo from "/public/Assets/Icons/hand_icon.png";
+import hand_logo from "/Assets/Icons/hand_icon.png";
 import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
