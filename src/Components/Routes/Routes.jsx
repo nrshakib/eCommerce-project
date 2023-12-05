@@ -25,15 +25,30 @@ const router = createBrowserRouter([
       },
       {
         path: "mens",
-        element: <Category category="men" />,
+        element: (
+          <Category
+            banner="https://i.ibb.co/WyrnZdZ/banner-mens.png"
+            category="men"
+          />
+        ),
       },
       {
         path: "womens",
-        element: <Category category="women" />,
+        element: (
+          <Category
+            banner="https://i.ibb.co/xHfLjKW/banner-women.png"
+            category="women"
+          />
+        ),
       },
       {
         path: "kids",
-        element: <Category category="kid" />,
+        element: (
+          <Category
+            banner="https://i.ibb.co/8gMHkns/banner-kids.png"
+            category="kid"
+          />
+        ),
       },
       {
         path: "product",

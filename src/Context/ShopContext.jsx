@@ -1,10 +1,25 @@
-import { createContext } from "react";
-import all_product from "/Assets/Data/all_product.json?url";
+import { createContext, useEffect, useState } from "react";
 
 export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
-  const contextValue = { all_product };
+  //state to hold the fetched data
+  const [products, setProducts] = useState([]);
+
+  //function to fetch json data
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch("/public/Assets/Data/all_product.json");
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      //   console.log(error);
+    }
+  };
+  useEffect(() => {
+    fetchProducts();
+  },[]);
+  const contextValue = { products };
 
   return (
     <ShopContext.Provider value={contextValue}>
