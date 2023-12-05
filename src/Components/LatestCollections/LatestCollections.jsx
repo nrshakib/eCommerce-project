@@ -4,7 +4,7 @@ import Item from "../Items/Item";
 const LatestCollections = () => {
   const [latestCollection, setLatestCollection] = useState([]);
   useEffect(() => {
-    fetch("public/Assets/Data/new_collections.json")
+    fetch("/Assets/Data/new_collections.json")
       .then((res) => res.json())
       //   .then((data) => console.log(data))1
       .then((data) => setLatestCollection(data));

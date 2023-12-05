@@ -4,7 +4,7 @@ import Item from "../Items/Item";
 const ShopItems = () => {
   const [shopItems, setShopItems] = useState([]);
   useEffect(() => {
-    fetch("public/Assets/Data/all_product.json")
+    fetch("/Assets/Data/all_product.json")
       .then((res) => res.json())
       // .then((data) => console.log(data))
       .then((data) => setShopItems(data));
