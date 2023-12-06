@@ -9,7 +9,7 @@ const ShopContextProvider = (props) => {
   //function to fetch json data
   const fetchProducts = async () => {
     try {
-      const response = await fetch("/public/Assets/Data/all_product.json");
+      const response = await fetch("/Assets/Data/all_product.json");
       const data = await response.json();
       setProducts(data);
     } catch (error) {
@@ -18,7 +18,7 @@ const ShopContextProvider = (props) => {
   };
   useEffect(() => {
     fetchProducts();
-  },[]);
+  }, []);
   const contextValue = { products };
 
   return (

@@ -4,7 +4,7 @@ import Item from "../Components/Item";
 
 const Category = (props) => {
   const { products } = useContext(ShopContext);
-  console.log(products);
+  // console.log(products);
   return (
     <div>
       <img className="w-3/4 mx-auto" src={props.banner} alt="" />
