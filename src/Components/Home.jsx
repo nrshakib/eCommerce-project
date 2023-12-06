@@ -1,6 +1,6 @@
-import Hero from "../Hero/Hero";
-import NewsLetter from "../NewsLetter/NewsLetter";
-import Offers from "../Offers/Offers";
+import Hero from "./Hero";
+import NewsLetter from "./NewsLetter";
+import Offers from "./Offers";
 
 const Home = () => {
   return (

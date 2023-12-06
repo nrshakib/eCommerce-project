@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ShopContext } from "../Context/ShopContext";
-import Item from "../Components/Items/Item";
+import Item from "../Components/Item";
 
 const Category = (props) => {
   const { products } = useContext(ShopContext);

@@ -5,10 +5,10 @@ import Category from "../../Pages/Category";
 import Product from "../../Pages/Product";
 import Cart from "../../Pages/Cart";
 import LogIn from "../../Pages/LogIn";
-import SignIn from "../../Pages/SignIn";
+import SignIn from "../../Pages/SignUp";
 import WishList from "../../Pages/WishList";
 import Main from "../Layout/Main";
-import Home from "../Home/Home";
+import Home from "../Home";
 
 const router = createBrowserRouter([
   {
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "product",
+        path: "product/:productId",
         element: <Product />,
       },
       {

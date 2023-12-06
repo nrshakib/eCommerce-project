@@ -1,6 +1,6 @@
-import LatestCollections from "../Components/LatestCollections/LatestCollections";
-import Offers from "../Components/Offers/Offers";
-import ShopItems from "../Components/ShopItems/ShopItems";
+import LatestCollections from "../Components/LatestCollections";
+import Offers from "../Components/Offers";
+import ShopItems from "../Components/ShopItems";
 
 const Shop = () => {
   return (
