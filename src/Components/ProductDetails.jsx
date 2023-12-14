@@ -5,13 +5,13 @@ import { IoIosStarHalf } from "react-icons/io";
 const ProductDetails = (props) => {
   const { product } = props;
   return (
-    <div className="justify-center mt-5 flex">
+    <div className="justify-center mt-12 flex">
       <div className="flex">
         <div className="h-20 ml-10 mr-5">
-          <img className="h-16 mb-2" src={product.image} alt={product.image} />
-          <img className="h-16 mb-2" src={product.image} alt={product.image} />
-          <img className="h-16 mb-2" src={product.image} alt={product.image} />
-          <img className="h-16 mb-2" src={product.image} alt={product.image} />
+          <img className="h-24 mb-2" src={product.image} alt={product.image} />
+          <img className="h-24 mb-2" src={product.image} alt={product.image} />
+          <img className="h-24 mb-2" src={product.image} alt={product.image} />
+          <img className="h-24 mb-2" src={product.image} alt={product.image} />
         </div>
         <div>
           <img src={product.image} alt={product.image} />
