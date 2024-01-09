@@ -1,5 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
-// import Layout from "../Layout/Main";
+import { createBrowserRouter } from "react-router-dom"
 import Shop from "../../Pages/Shop";
 import Category from "../../Pages/Category";
 import Product from "../../Pages/Product";

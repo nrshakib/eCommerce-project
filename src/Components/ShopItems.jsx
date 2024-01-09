@@ -6,7 +6,6 @@ const ShopItems = () => {
   useEffect(() => {
     fetch("/Assets/Data/all_product.json")
       .then((res) => res.json())
-      // .then((data) => console.log(data))
       .then((data) => setShopItems(data));
   }, []);
   return (
@@ -19,7 +18,6 @@ const ShopItems = () => {
           shopItems.map((shopItem) => {
             return <Item key={shopItem.id} shopItem={shopItem} />;
           })}
-        {/* <p>{shopItems.length}</p> */}
       </div>
     </div>
   );
