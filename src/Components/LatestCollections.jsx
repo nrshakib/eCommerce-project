@@ -10,10 +10,10 @@ const LatestCollections = () => {
   }, []);
   return (
     <div className="mt-2">
-      <p className="text-center text-3xl text-yellow-500">
+      <p className="text-center text-3xl text-yellow-500 mb-5">
         Our Latest Collections
       </p>
-      <hr className="h-px bg-gray-400 border-0 w-4/5 mx-auto" />
+      <hr className="h-px bg-gray-400 border-0 w-4/5 mx-auto mb-5" />
 
       <div className="mt-5 ml-48 mr-32 grid grid-cols-4">
         {latestCollection &&
