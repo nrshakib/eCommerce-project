@@ -9,9 +9,9 @@ const BreadCrum = (props) => {
       <MdArrowForwardIos />
       Shop
       <MdArrowForwardIos />
-      {product.category}
+      {product?.category}
       <MdArrowForwardIos />
-      {product.name}
+      {product?.name}
     </div>
   );
 };
