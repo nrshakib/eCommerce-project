@@ -8,7 +8,7 @@ const ProductDetails = (props) => {
     <div>
       <div className="justify-center mt-12 flex">
         <div className="flex">
-          <div className="h-20 ml-10 mr-5">
+          <div className="h-96 ml-10 mr-5">
             <img
               className="h-24 mb-2"
               src={product?.image}
@@ -30,8 +30,8 @@ const ProductDetails = (props) => {
               alt={product?.image}
             />
           </div>
-          <div>
-            <img src={product?.image} alt={product?.image} />
+          <div className="">
+            <img className="h-full" src={product?.image} alt={product?.image} />
           </div>
         </div>
         <div className="ml-5">
@@ -72,8 +72,11 @@ const ProductDetails = (props) => {
             <option value="">XXL</option>
           </select>
           <br />
-          <button className="w-32 border-2 p-2 rounded-lg bg-yellow-500">
+          <button className="w-32 border-2 p-2 rounded-lg bg-yellow-500 text-white text-sm hover:text-black">
             Add To Cart
+          </button>
+          <button className="w-40 border-2 p-2 rounded-lg bg-red-500 text-black text-sm hover:text-white">
+            Add To Wishlist
           </button>
         </div>
       </div>
