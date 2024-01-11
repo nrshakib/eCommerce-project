@@ -5,6 +5,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   //state to hold the fetched data
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
 
   //function to fetch json data
   const fetchProducts = async () => {
@@ -19,7 +20,15 @@ const ShopContextProvider = (props) => {
   useEffect(() => {
     fetchProducts();
   }, []);
-  const contextValue = { products };
+
+  // Cart items function
+  const addToCart = (product) => {
+    console.log(product);
+    const newCart = [...cart, product];
+    setCart(newCart);
+  };
+
+  const contextValue = { products, addToCart, cart };
 
   return (
     <ShopContext.Provider value={contextValue}>

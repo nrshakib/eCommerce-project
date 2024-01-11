@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { IoIosStar } from "react-icons/io";
 import { IoIosStarHalf } from "react-icons/io";
+import { ShopContext } from "../Context/ShopContext";
 
 const ProductDetails = (props) => {
   const { product } = props;
+  const { addToCart } = useContext(ShopContext);
+  const addToCartToast = () => {
+    toast.success("Successfully added to Cart!", {
+      position: "bottom-right",
+    });
+  };
+  const addToWishlistToast = () => {
+    toast("Successfully added to Wishlist ");
+  };
   return (
     <div>
       <div className="justify-center mt-12 flex">
@@ -72,7 +84,13 @@ const ProductDetails = (props) => {
             <option value="">XXL</option>
           </select>
           <br />
-          <button className="w-32 border-2 p-2 rounded-lg bg-yellow-500 text-white text-sm hover:text-black">
+          <button
+            onClick={() => {
+              addToCart(product);
+              addToCartToast();
+            }}
+            className="w-32 border-2 p-2 rounded-lg bg-yellow-500 text-white text-sm hover:text-black"
+          >
             Add To Cart
           </button>
           <button className="w-40 border-2 p-2 rounded-lg bg-red-500 text-black text-sm hover:text-white">
@@ -80,6 +98,7 @@ const ProductDetails = (props) => {
           </button>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
